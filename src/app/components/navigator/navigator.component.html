@@ -1,0 +1,31 @@
+<form>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="form-row">
+                    <div class="col">
+                        <label class="my-1 mr-2" style="display: block;" for="inlineFormCustomSelectPref">Select Car</label>
+                        <p-dropdown [options]="cars" [(ngModel)]="selectedCar" name="car" optionLabel="model" filter="true" [style]="{'width':'15em'}">
+                        </p-dropdown>
+                    </div>
+                    <div class="col">
+                        <label class="my-1 mr-2" style="display: block;" for="inlineFormCustomSelectPref">From Region</label>
+                        <p-dropdown [options]="regionsFrom" [(ngModel)]="selectedRegionFrom" name="selectedRegionFrom" optionLabel='name' (onChange)='validateDropdowns($event)' filter="true" [style]="{'width':'15em'}">
+                        </p-dropdown>
+                    </div>
+                    <div class="col">
+                        <label class="my-1 mr-2" style="display: block;" for="inlineFormCustomSelectPref">To Region</label>
+                        <p-dropdown [options]="regionsTo" [(ngModel)]="selectedRegionTo" name="selectedRegionTo" optionLabel='name' filter="true" [style]="{'width':'15em'}">
+                        </p-dropdown>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <button pButton type="button" label="Navigate" (click)="saveHistory()" class="ui-button-raised" style="margin-top:2em; width: 9em"></button>
+                </div>
+            </div>
+        </div>
+
+        <app-history></app-history>
+    </div>
+
+</form>

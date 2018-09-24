@@ -1,0 +1,27 @@
+<h3 style="margin-top: 2em">History</h3>
+
+<p-table [columns]="cols" [value]="historyList" [paginator]="true" [rows]="10" [style]="{'margin-top': '1em'}">
+    <ng-template pTemplate="header" let-columns>
+        <tr>
+            <th *ngFor="let col of columns">
+                {{col.header}}
+            </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData let-columns="columns">
+        <tr>
+            <td *ngFor="let col of columns">
+                {{rowData[col.field]}}
+            </td>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="emptymessage">
+        <tr>
+            <td>
+                <div style="margin-left: 1em">
+                    No records
+                </div>
+            </td>
+        <tr>
+    </ng-template>
+</p-table>
