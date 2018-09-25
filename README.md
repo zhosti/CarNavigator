@@ -6,7 +6,9 @@ Github link for the project: `https://github.com/zhosti/CarNavigator`
 
 Before run on Development server after pull or download project from repository, please be sure that you will run `npm install`
 
-If you get file from the zip Ivan_Zhostov_Frontend_Developer.zip folder there's no need to run `npm install`
+OR
+
+If you get file from the zip Ivan_Zhostov_Frontend_Developer.zip folder run `npm install`
 
 # Improvments
 
