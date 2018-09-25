@@ -8,6 +8,10 @@ Before run on Development server after pull or download project from repository,
 
 If you get file from the zip Ivan_Zhostov_Frontend_Developer.zip folder there's no need to run `npm install`
 
+# Improvments
+
+The app can be improved with separating data table columns etc. Navigate time, Region From, Region To. And then there be reasonable point to add some table filters, and sort columns. We can add some distance measurement between regions. And depend on the distance we can simulate some navigate delay.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
