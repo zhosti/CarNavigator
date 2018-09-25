@@ -8,7 +8,7 @@ Before run on Development server after pull or download project from repository,
 
 OR
 
-If you get file from the zip Ivan_Zhostov_Frontend_Developer.zip folder run `npm install`
+If you get file from the zip Ivan_Zhostov_Front-end_Developer.zip folder run `npm install`
 
 # Improvments
 
